@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import About from "./components/about";
+import MyCarousel from "./components/carousel";
+import ContactUs from "./components/contact";
+import Footer from "./components/footer";
+import Navbar from "./components/navbar";
+import Service from "./components/services";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="relative">
+        <div className="absolute inset-0 -z-10 h-full w-full bg-white [background:radial-gradient(125%_125%_at_50%_10%,#fff_40%,#63e_100%)]"></div>
+        <Navbar />
+        <MyCarousel />
+        <About />
+        <Service />
+        <ContactUs/>
+        <Footer />
+
+      </div>
+    </>
   );
 }
 
